@@ -26,6 +26,12 @@ echo >&2 "Setting permissions..."
 
 chown www-data:www-data app/config/local.php
 
+rm -rf /var/www/html/app/cache
+
+mkdir -p /var/www/html/app/cache
+
+chown -R www-data:www-data /var/www/html/app/cache
+
 mkdir -p /var/www/html/app/logs
 
 chown www-data:www-data /var/www/html/app/logs
