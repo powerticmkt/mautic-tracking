@@ -22,6 +22,11 @@ else
   sed -i -e "s/VIRTUAL_HOST/http:\/\/$MAUTIC_ADDRESS/g" /var/www/html/app/config/local.php
 fi
 
+sed -i -e "s/ANONIMIZE_IP/$ANONIMIZE_IP/g" /var/www/html/app/config/local.php
+sed -i -e "s/TRACK_BY_IP/$TRACK_BY_IP/g" /var/www/html/app/config/local.php
+sed -i -e "s/TRACK_BY_URL/$TRACK_BY_URL/g" /var/www/html/app/config/local.php
+sed -i -e "s/TRACK_BY_FINGERPRINT/$TRACK_BY_FINGERPRINT/g" /var/www/html/app/config/local.php
+
 echo >&2 "Setting permissions..."
 
 chown www-data:www-data app/config/local.php

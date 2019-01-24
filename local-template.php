@@ -36,6 +36,12 @@ $parameters = array(
 	'cors_valid_domains' => array(
 
 	),
+	
+	'anonymize_ip' => ANONIMIZE_IP,
+	'track_contact_by_ip' => TRACK_BY_IP,
+	'track_by_tracking_url' => TRACK_BY_URL,
+	'track_by_fingerprint' => TRACK_BY_FINGERPRINT,
+
 	'default_pagelimit' => 30,
 	'default_timezone' => 'America/Sao_Paulo',
 	'date_format_full' => 'F j, Y g:i a T',
